@@ -2,6 +2,6 @@ import { pinyin } from "pinyin-pro";
 
 export default function handler(req, res) {
   const text = req.query.text || "";
-  const result = pinyin(text, { toneType: "mark" });
+  const result = pinyin(text, { toneType: "mark", type: "array" }).join('');
   res.status(200).json({ pinyin: result });
 }
