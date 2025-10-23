@@ -1,0 +1,8 @@
+{
+  "name": "api-pinyin",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "pinyin-pro": "^3.17.0"
+  }
+}
